@@ -32,7 +32,7 @@ const Hero = () => {
                             Save lives by donating your valuable <span className="text-red-700 underline">blood</span>.
                         </h1>
                     </div>
-                    <div className=" flex flex-wrap justify-around">
+                    <div className=" flex flex-wrap h-[270px] my-auto justify-around">
                         <div className="flex flex-wrap justify-center mt-10 text-center cards">
                             <Card className="w-[270px] h-[270px] bg-red-500 mr-4">
                                 <CardHeader>
@@ -60,7 +60,7 @@ const Hero = () => {
                                 </CardContent>
                             </Card>
                         </div>
-                        <div className="carousal">
+                        <div className="carousal h-[160px] my-auto">
                             <Carousel
                                 plugins={[plugin.current]}
                                 className="w-[400px]"
