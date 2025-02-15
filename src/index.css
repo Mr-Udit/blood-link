@@ -4,7 +4,7 @@
 
 body::-webkit-scrollbar{
   width: 10px;
-  /* background-color:black; */
+  background-color:black;
   border-radius: 6px;
 }
 body::-webkit-scrollbar-thumb{

@@ -25,10 +25,10 @@ const Hero = () => {
     )
     return (
         <section>
-            <div className="container m-auto">
+            <div className="container sm:h-[950px] md:h-[600px] lg:h-[400px]  m-auto">
                 <div className="sub-container">
                     <div className="text-center slogan">
-                        <h1 className="m-4 mt-10 text-4xl text-white">
+                        <h1 className="m-4 mt-10 text-4xl text-red-500">
                             Save lives by donating your valuable <span className="text-red-700 underline">blood</span>.
                         </h1>
                     </div>
@@ -60,7 +60,7 @@ const Hero = () => {
                                 </CardContent>
                             </Card>
                         </div>
-                        <div className="carousal h-[160px] my-auto">
+                        <div className="carousal md:mt-10 h-[160px] lg:my-auto">
                             <Carousel
                                 plugins={[plugin.current]}
                                 className="w-[400px]"

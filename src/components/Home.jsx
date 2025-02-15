@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <main>
             <Hero />
-            <Separator className=" w-[500px] h-[3px] m-auto my-7" />
+            <Separator className=" w-[500px] h-[3px] bg-red-500 m-auto my-7" />
             <BloodSearch/>
             <Separator className=" w-[700px] m-auto my-7" />
             <Infor heading={DonationImportance.heading}>
