@@ -72,14 +72,14 @@ const Hero = () => {
                                         <CarouselItem key={index}>
                                             <div className="p-1">
                                                 <Card>
-                                                    <CardContent className="flex aspect-square items-center justify-center p-6">
+                                                    <CardContent className="flex items-center h-[160px] justify-center p-6">
                                                         <motion.div
-                                                            className="bg-white p-5 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
+                                                            className="bg-white p-5 w-full rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
                                                             whileHover={{ scale: 1.05 }}
                                                         >
                                                             <div className="flex items-center justify-between">
                                                                 <h3 className="text-xl font-semibold">{feedback.name}</h3>
-                                                                <span className={`px-3 py-1 rounded-full text-sm font-medium ${role === "Donor" ? "bg-red-100 text-red-600" : "bg-blue-100 text-blue-600"}`}>
+                                                                <span className={`px-3 py-1 rounded-full text-sm font-medium ${feedback.role === "Donor" ? "bg-red-100 text-red-600" : "bg-blue-100 text-blue-600"}`}>
                                                                     {feedback.role}
                                                                 </span>
                                                             </div>
@@ -106,8 +106,3 @@ const Hero = () => {
 
 export default Hero
 
-const FeedbackCard = ({ name, role, feedback }) => {
-    return (
-        
-    );
-};
