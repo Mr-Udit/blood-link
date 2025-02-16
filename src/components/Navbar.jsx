@@ -11,7 +11,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Link } from "react-router-dom";
-import React from "react";
 import {
   SignedIn,
   SignedOut,

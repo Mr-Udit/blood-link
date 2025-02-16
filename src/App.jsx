@@ -1,5 +1,6 @@
 
 import DonationImportance from "./assets/constants";
+import Emergency from "./components/Emergency";
 import Home from "./components/Home"
 import Infor from "./components/Infor";
 import Navbar from "./components/Navbar"
@@ -13,6 +14,9 @@ function App() {
     },{
       path:"/about",
       element : <><Navbar/> <Infor heading={DonationImportance.heading}> {DonationImportance.description} </Infor></>
+    },{
+      path:"/emergency",
+      element : <><Navbar/> <Emergency/> </>
     }])
   return(
     <>
