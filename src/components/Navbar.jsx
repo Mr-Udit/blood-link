@@ -35,7 +35,7 @@ const Navbar = () => {
                 <Link to="/">home</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
-                <Link to="/">about</Link>
+                <Link to="/about">about</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
                 <Link to="/">Donors</Link>
