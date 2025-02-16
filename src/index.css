@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+  font-family: "Inter",sans-serif;
+}
 
 body::-webkit-scrollbar{
   width: 10px;
@@ -14,13 +19,13 @@ body::-webkit-scrollbar-thumb{
   border: 1px solid red;
 }
  
-.w-1200{
+/* .w-1200{
   max-width: 1000px;
   height: 500px;
 }
 
 
-/* ... */
+
 
 @layer base {
   :root {
@@ -166,4 +171,4 @@ body::-webkit-scrollbar-thumb{
   body {
     @apply bg-background text-foreground;
   }
-}
+} */

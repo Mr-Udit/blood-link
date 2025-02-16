@@ -1,17 +1,21 @@
 
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 function App() {
-
-  return (
-    <main>
-      <Navbar />
-      <Home/>
-    </main>
-  )
-
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element:<Home />
+    }])
+  return(
+    <>
+     <RouterProvider router={router}></RouterProvider>
+    </>
+  );
 }
+
 
 export default App
 
