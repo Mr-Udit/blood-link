@@ -19,15 +19,15 @@ const Home = () => {
             
         {/* Section 1 */}
         <Section1 />
-            <Hero />
-            <Separator className=" w-[500px] h-[3px] bg-red-500 m-auto my-7" />
+            {/* <Hero /> */}
+            {/* <Separator className=" w-[500px] h-[3px] bg-red-500 m-auto my-7" />
             <BloodSearch/>
             <Separator className=" w-[700px] m-auto my-7" />
             <Infor heading={DonationImportance.heading}>
                 {donationImportance}
             </Infor>
             <Separator className=" w-[300px] m-auto my-7" />
-            <Footer />
+            <Footer /> */}
         </main>
     )
 }

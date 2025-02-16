@@ -27,63 +27,20 @@ const Hero = () => {
     <section>
       <div className="container sm:h-[950px] md:h-[600px] lg:h-[400px]  m-auto">
         <div className="sub-container">
-          {/* <div className="text-center slogan">
-            <h1 className="m-4 mt-10 text-4xl text-red-500">
-              Save lives by donating your valuable{" "}
-              <span className="text-red-700 underline">blood</span>.
-            </h1>
-          </div> */}
           <div className=" flex flex-wrap h-[270px] my-auto justify-around">
-            {/* <div className="flex flex-wrap justify-center mt-10 text-center cards">
-              <Card className="w-[270px] h-[270px] bg-red-500 mr-4">
-                <CardHeader>
-                  <CardTitle className="text-3xl text-white">
-                    Units Avilable
-                  </CardTitle>
-                  <CardDescription className="text-gray-900">
-                    We have only this blood left in stock
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <h3 className="text-3xl text-white underline">
-                    12 <span className="underline">Units</span>
-                  </h3>
-                </CardContent>
-                <CardFooter className="flex justify-center">
-                  <Button variant="outline">
-                    Donate Now <ArrowRight />{" "}
-                  </Button>
-                </CardFooter>
-              </Card>
-              <Card className="w-[270px] h-[270px] bg-red-500">
-                <CardHeader>
-                  <CardTitle className="text-3xl text-white">
-                    People helped
-                  </CardTitle>
-                  <CardDescription className="text-gray-900">
-                    We have helped many pepele as listed below
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <h3 className="text-3xl text-white">
-                    1200 + <span className="underline">people</span>
-                  </h3>
-                </CardContent>
-              </Card>
-            </div> */}
             <div className="carousal md:mt-10 h-[160px] lg:my-auto">
-              <Carousel
+              <Carousel 
                 plugins={[plugin.current]}
-                className="w-[400px]"
+                className=" border-none w-[400px]"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
               >
                 <CarouselContent>
                   {bloodDonationFeedback.map((feedback, index) => (
-                    <CarouselItem key={index}>
+                    <CarouselItem  key={index}>
                       <div className="p-1">
                         <Card>
-                          <CardContent className="flex items-center h-[160px] justify-center p-6">
+                          <CardContent className=" border-none flex items-center h-[160px] justify-center p-6">
                             <motion.div
                               className="bg-white p-5 w-full rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
                               whileHover={{ scale: 1.05 }}
@@ -93,11 +50,10 @@ const Hero = () => {
                                   {feedback.name}
                                 </h3>
                                 <span
-                                  className={`px-3 py-1 rounded-full text-sm font-medium ${
-                                    feedback.role === "Donor"
+                                  className={`px-3 py-1 rounded-full text-sm font-medium ${feedback.role === "Donor"
                                       ? "bg-red-100 text-red-600"
                                       : "bg-blue-100 text-blue-600"
-                                  }`}
+                                    }`}
                                 >
                                   {feedback.role}
                                 </span>
