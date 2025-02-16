@@ -1,10 +1,10 @@
 
 import Hero from "./Hero"
-// import Infor from "./Infor"
+import Infor from "./Infor"
 import DonationImportance from "@/assets/constants"
 import { Separator } from "./ui/separator";
-// import Footer from "./Footer";
-// import BloodSearch from "./BloodSearch";
+import Footer from "./Footer";
+import BloodSearch from "./BloodSearch";
 import Navbar from "./Navbar";
 import Section1 from "./Section1";
 import Section2 from "./Section2";

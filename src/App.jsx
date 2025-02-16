@@ -3,7 +3,7 @@ import DonationImportance from "./assets/constants";
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
-
+import Infor from "./components/Infor";
 function App() {
   const router = createBrowserRouter([
     {
