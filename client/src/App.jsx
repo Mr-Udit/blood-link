@@ -33,7 +33,7 @@ function App() {
 
     {
       path:"/emergency",
-      element : <div className=" w-[1280px] m-auto"><Navbar/> <Emergency/> <Footer/></div>
+      element : <div className=" w-[1280px] m-auto"><Navbar/> <Emergency/> <Footer/> </div>
     }])
   return(
     <>
