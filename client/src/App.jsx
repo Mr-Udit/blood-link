@@ -9,6 +9,7 @@ import BloodGroupFinder from "./components/BloodGroupFinder";
 import Donors from "./components/Donors";
 import DonorsFeedback from "./components/DonorsFeedback";
 import Footer from "./components/Footer";
+import BloodDonationForm from "./components/BloodDonationForm";
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,7 +31,10 @@ function App() {
       path : "/donars-feedback",
       element : <div className=" w-[1280px] m-auto"> <Navbar/> <DonorsFeedback/>  <Footer/></div>
     },
-
+    {
+      path : "/donation-form",
+      element : <div className=" w-[1280px] m-auto"> <Navbar/> <BloodDonationForm/> <Footer/></div>
+    },
     {
       path:"/emergency",
       element : <div className=" w-[1280px] m-auto"><Navbar/> <Emergency/> <Footer/> </div>

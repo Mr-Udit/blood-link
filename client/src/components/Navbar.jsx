@@ -43,7 +43,9 @@ const Navbar = () => {
                 <Link to="/emergency">blood banks</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
+                <Link to={"/donation-form"}>
                 <Button variant="outline" className="text-white bg-red-700">Donate Now <ArrowRight /> </Button>
+                </Link>
               </li>
               <li>
                 <SignedOut>
