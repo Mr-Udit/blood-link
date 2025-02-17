@@ -1,8 +1,5 @@
 /* eslint-disable react/prop-types */
 
-import { ArrowRight } from "lucide-react"
-import { Button } from "./ui/button"
-
 const Infor = (props) => {
   return (
     <div className="container w-[1000px] m-auto mt-10 text-center">
@@ -14,10 +11,7 @@ const Infor = (props) => {
                 props.children
             }
         </p>
-        <Button className="mt-3 bg-red-700">
-            Read More
-            <ArrowRight/>
-        </Button>
+        
     </div>
   )
 }

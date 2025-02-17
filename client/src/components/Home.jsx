@@ -21,7 +21,7 @@ const Home = () => {
             <Separator className=" w-[500px] h-[3px] bg-red-500 m-auto my-7" />
             <Section2/>
             <Separator className=" w-[700px] m-auto my-7" />
-            <Infor heading={DonationImportance.heading}>
+            <Infor heading={DonationImportance.heading} href={DonationImportance.href}>
                 {donationImportance}
             </Infor>
             <Separator className=" w-[300px] m-auto my-7" />
