@@ -1,14 +1,8 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -29,7 +23,7 @@ const Hero = () => {
         <div className="sub-container">
           <div className=" flex flex-wrap h-[270px] my-auto justify-around">
             <div className="carousal md:mt-10 h-[160px] lg:my-auto">
-              <Carousel 
+              <Carousel
                 plugins={[plugin.current]}
                 className=" border-none w-[400px]"
                 onMouseEnter={plugin.current.stop}
@@ -37,10 +31,10 @@ const Hero = () => {
               >
                 <CarouselContent>
                   {bloodDonationFeedback.map((feedback, index) => (
-                    <CarouselItem  key={index}>
+                    <CarouselItem key={index}>
                       <div className="p-1">
                         <Card>
-                          <CardContent className=" border-none flex items-center h-[160px] justify-center p-6">
+                          <CardContent className=" border-none w-[450px] flex items-center  ml-[-30px] h-[120px] justify-center p-6">
                             <motion.div
                               className="bg-white p-5 w-full rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
                               whileHover={{ scale: 1.05 }}
@@ -51,8 +45,8 @@ const Hero = () => {
                                 </h3>
                                 <span
                                   className={`px-3 py-1 rounded-full text-sm font-medium ${feedback.role === "Donor"
-                                      ? "bg-red-100 text-red-600"
-                                      : "bg-blue-100 text-blue-600"
+                                    ? "bg-red-100 text-red-600"
+                                    : "bg-blue-100 text-blue-600"
                                     }`}
                                 >
                                   {feedback.role}

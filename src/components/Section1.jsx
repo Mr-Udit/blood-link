@@ -20,7 +20,7 @@ const Section1 = () => {
       </div>
       <div className="flex  items-center justify-between">
         <div className="flex  items-center border-none justify-center mt-10 " >
-          <Card className="rounded-lg mr-5 shadow-lg border-none bg-red-700 w-[200px] h-[140px] ">
+          <Card className="rounded mr-5  shadow-lg border-none bg-red-700 w-[200px] h-[140px] ">
             <CardHeader className="flex items-center justify-between  text-white">
               <CardTitle>Units Available</CardTitle>
               <CardDescription>1200+ units</CardDescription>
@@ -29,7 +29,7 @@ const Section1 = () => {
 
           </Card>
 
-          <Card className="rounded-lg shadow-lg bg-red-700 text-white w-[200px] h-[140px] ">
+          <Card className="rounded shadow-lg bg-red-700 text-white w-[200px] h-[140px] ">
             <CardHeader className="flex items-center justify-between">
               <CardTitle>People Helped</CardTitle>
               <CardDescription>600+</CardDescription>
