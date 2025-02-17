@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { Input } from "./ui/input"
-import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Link } from "react-router-dom";
+import { bloodBankData } from "@/assets/constants";
 
 const Section2 = () => {
   const [searchData, setSearchData] = useState('');
@@ -33,18 +33,21 @@ const Section2 = () => {
             />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div className=" md:mt-10 h-[160px] lg:my-auto">
-            <Card className="rounded mr-5  shadow-lg border-none bg-red-700 w-[200px] h-[140px] ">
+        <div className="w-[1100px] m-auto">
+          <div className=" md:mt-10 h-[320px] overflow-hidden flex flex-wrap flex-row lg:my-auto">
+            {
+              bloodBankData.map((data,key)=>(
+            <Card className="rounded mr-5 mt-4  shadow-lg border-none bg-red-700 w-[200px] h-[140px] " key={key}>
               <CardHeader className="flex items-center justify-between  text-white">
-                <CardTitle>City Name</CardTitle>
+                <CardTitle className="text-2xl">{data.city}</CardTitle>
                 <CardDescription>
-                  <p>Units Avilable</p>
-                  <p>1200+ units</p>
+                  <p className="w-full text-center text-xl">Units Avilable</p>
+                  <p className="w-full text-center text-xl">{data.unit}</p>
                 </CardDescription>
-                <Button variant="secondary" className="bg-white text-red-700 hover:bg-red-700 hover:text-white rounded-lg" >Contact Now</Button>
               </CardHeader>
             </Card>
+              ))
+            }
           </div>
         </div>
       </div>

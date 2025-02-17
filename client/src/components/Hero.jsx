@@ -43,14 +43,6 @@ const Hero = () => {
                                 <h3 className="text-xl font-semibold">
                                   {feedback.name}
                                 </h3>
-                                <span
-                                  className={`px-3 py-1 rounded-full text-sm font-medium ${feedback.role === "Donor"
-                                    ? "bg-red-100 text-red-600"
-                                    : "bg-blue-100 text-blue-600"
-                                    }`}
-                                >
-                                  {feedback.role}
-                                </span>
                               </div>
                               <p className="mt-2 text-gray-600">
                                 {feedback.feedback}

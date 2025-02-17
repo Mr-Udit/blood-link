@@ -37,10 +37,10 @@ const Navbar = () => {
                 <Link to="/about">about</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
-                <Link to="/">Donors</Link>
+                <Link to="/donors">Donors</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
-                <Link to="/">blood banks</Link>
+                <Link to="/emergency">blood banks</Link>
               </li>
               <li className="mr-4" style={{ textTransform: "capitalize" }}>
                 <Button variant="outline" className="text-white bg-red-700">Donate Now <ArrowRight /> </Button>
