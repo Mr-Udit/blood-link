@@ -14,7 +14,7 @@ const donationImportance = DonationImportance.description.split(" ").slice(0, 10
 
 const Home = () => {
     return (
-        <main>
+        <main className="w-[1280px] m-auto">
             <Navbar />
             {/* Section 1 */}
             <Section1 />

@@ -1,15 +1,11 @@
 import {
   Card,
-  CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import Hero from "./Hero";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
-import { ChartColumnStacked } from "lucide-react";
 
 const Section1 = () => {
   return (
@@ -26,7 +22,6 @@ const Section1 = () => {
               <CardDescription>1200+ units</CardDescription>
               <Button variant="secondary" className="bg-white text-red-700 hover:bg-red-700 hover:text-white rounded-lg" >Donate Now</Button>
             </CardHeader>
-
           </Card>
 
           <Card className="rounded shadow-lg bg-red-700 text-white w-[200px] h-[140px] ">
@@ -38,7 +33,7 @@ const Section1 = () => {
           </Card>
         </div>
         <div className=" ml-[60px] h-[240px] ">
-        <Hero/>
+          <Hero />
         </div>
       </div>
     </div>

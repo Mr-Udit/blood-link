@@ -5,6 +5,9 @@ import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Infor from "./components/Infor";
+import BloodGroupFinder from "./components/BloodGroupFinder";
+import Donors from "./components/Donors";
+import DonorsFeedback from "./components/DonorsFeedback";
 function App() {
   const router = createBrowserRouter([
     {
@@ -12,10 +15,24 @@ function App() {
       element:<Home />
     },{
       path:"/about",
-      element : <><Navbar/> <Infor heading={DonationImportance.heading}> {DonationImportance.description} </Infor></>
-    },{
+      element : <><div className=" w-[1280px] m-auto"><Navbar/> <Infor heading={DonationImportance.heading}> {DonationImportance.description} </Infor></div></>
+    },
+    {
+      path: "/bloodgroup-finder",
+      element : <div className=" w-[1280px] m-auto"> <Navbar/> <BloodGroupFinder/></div>
+    },
+    {
+      path : "/donors",
+      element : <div className=" w-[1280px] m-auto"> <Navbar/> <Donors/> </div>
+    },
+    {
+      path : "/donars-feedback",
+      element : <div className=" w-[1280px] m-auto"> <Navbar/> <DonorsFeedback/>  </div>
+    },
+
+    {
       path:"/emergency",
-      element : <><Navbar/> <Emergency/> </>
+      element : <div className=" w-[1280px] m-auto"><Navbar/> <Emergency/> </div>
     }])
   return(
     <>
